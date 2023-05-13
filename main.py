@@ -3,8 +3,9 @@ import win32com.client
 import hashlib
 import datetime
 import os.path
-import pysftp
+#import pysftp
 #import randomname
+from ftpretty import ftpretty
 
 # CARPETA DE SALIDA s
 out_folder = Path.cwd() / "Output"
@@ -45,10 +46,12 @@ for message in messages:
 print(date.strftime('%Y-%m-%d'))
 
 # CONECTION TO SFTP & UPLOAD FILE
-cnopts = pysftp.CnOpts()
-cnopts.hostkeys = None
-with pysftp.Connection(host='my.uxlabs.mx', username='jonathan-uxlabs@api.uxlabs.mx', password='Tuxedo0827', cnopts = cnopts, port=222) as sftp:
-    print("Connection successfully established ... ")
-    sftp.put_r(target_folder, target_folder, preserve_mtime=True)
-    print("Upload file ")
-    sftp.close()
+#cnopts = pysftp.CnOpts()
+#cnopts.hostkeys = None
+#with pysftp.Connection(host='my.uxlabs.mx', username='jonathan-uxlabs@api.uxlabs.mx', password='Tuxedo0827', cnopts = cnopts, port=222) as sftp:
+#    print("Connection successfully established ... ")
+#    sftp.put_r(target_folder, target_folder, preserve_mtime=True)
+#    print("Upload file ")
+#    sftp.close()
+f = ftpretty('my.uxlabs.mx', 'jonathan-uxlabs@api.uxlabs.mx', 'Tuxedo0827' )
+f.put(str(target_folder)+'Duque.pdf', 'prueba/Duque.pdf')
