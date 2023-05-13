@@ -3,7 +3,8 @@ import win32com.client
 import hashlib
 import datetime
 import os.path
-from ftpretty import ftpretty
+#from ftpretty import ftpretty
+import pysftp
 
 # CARPETA DE SALIDA s
 out_folder = Path.cwd() / "Output"
@@ -51,5 +52,5 @@ print(date.strftime('%Y-%m-%d'))
 #    sftp.put_r(target_folder, target_folder, preserve_mtime=True)
 #    print("Upload file ")
 #    sftp.close()
-f = ftpretty('my.uxlabs.mx', 'jonathan-uxlabs@api.uxlabs.mx', 'Tuxedo0827' )
-f.put(str(target_folder)+'Duque.pdf', 'prueba/Duque.pdf')
+#f = ftpretty('my.uxlabs.mx', 'jonathan-uxlabs@api.uxlabs.mx', 'Tuxedo0827' )
+#f.put(str(target_folder)+'Duque.pdf', 'prueba/Duque.pdf')
