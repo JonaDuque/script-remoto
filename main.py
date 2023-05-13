@@ -3,8 +3,6 @@ import win32com.client
 import hashlib
 import datetime
 import os.path
-#import pysftp
-#import randomname
 from ftpretty import ftpretty
 
 # CARPETA DE SALIDA s
