@@ -6,7 +6,7 @@ import os.path
 import pysftp
 import randomname
 
-# CARPETA DE SALIDA
+# CARPETA DE SALIDA s
 out_folder = Path.cwd() / "Output"
 out_folder.mkdir(parents=True, exist_ok=True) # VALIDAR QUE EXISTA
 
