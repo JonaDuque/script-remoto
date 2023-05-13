@@ -4,7 +4,7 @@ import hashlib
 import datetime
 import os.path
 #import pysftp
-import randomname
+#import randomname
 
 # CARPETA DE SALIDA s
 out_folder = Path.cwd() / "Output"
