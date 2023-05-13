@@ -8,6 +8,7 @@ import os.path
 
 # CARPETA DE SALIDA s
 out_folder = Path.cwd() / "Output"
+print(Path.cwd())
 out_folder.mkdir(parents=True, exist_ok=True) # VALIDAR QUE EXISTA
 
 # CONECTAR A OUTLOOK
