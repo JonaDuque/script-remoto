@@ -38,6 +38,7 @@ for message in messages:
         if not os.path.isfile(str(target_folder)+str(attachment)):
             if ".pdf" in str(attachment) or ".xml" in str(attachment):
                 attachment.SaveAsFile(target_folder / str(attachment))
+                print('aquí')
                 
 # DATE
 print(date.strftime('%Y-%m-%d'))
