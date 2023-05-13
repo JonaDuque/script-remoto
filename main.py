@@ -1,3 +1,11 @@
+from pathlib import Path
+import win32com.client
+import hashlib
+import datetime
+import os.path
+import pysftp
+import randomname
+
 # CARPETA DE SALIDA
 out_folder = Path.cwd() / "Output"
 out_folder.mkdir(parents=True, exist_ok=True) # VALIDAR QUE EXISTA
