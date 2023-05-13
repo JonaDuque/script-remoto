@@ -3,7 +3,7 @@ import win32com.client
 import hashlib
 import datetime
 import os.path
-import pysftp
+#import pysftp
 import randomname
 
 # CARPETA DE SALIDA s
@@ -43,10 +43,10 @@ for message in messages:
 print(date.strftime('%Y-%m-%d'))
 
 # CONECTION TO SFTP & UPLOAD FILE
-cnopts = pysftp.CnOpts()
-cnopts.hostkeys = None
-with pysftp.Connection(host='my.uxlabs.mx', username='jonathan-uxlabs@api.uxlabs.mx', password='Tuxedo0827', cnopts = cnopts, port=222) as sftp:
-    print("Connection successfully established ... ")
-    sftp.put_r(target_folder, target_folder, preserve_mtime=True)
-    print("Upload file ")
-    sftp.close()
+#cnopts = pysftp.CnOpts()
+#cnopts.hostkeys = None
+#with pysftp.Connection(host='my.uxlabs.mx', username='jonathan-uxlabs@api.uxlabs.mx', password='Tuxedo0827', cnopts = cnopts, port=222) as sftp:
+#    print("Connection successfully established ... ")
+#    sftp.put_r(target_folder, target_folder, preserve_mtime=True)
+#    print("Upload file ")
+#    sftp.close()
