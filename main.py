@@ -1,5 +1,5 @@
 import sys
-print(sys.path)
+print(sys.path.append('/pysftp'))
 
 from pathlib import Path
 import win32com.client
