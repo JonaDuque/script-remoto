@@ -1,3 +1,7 @@
+import sys
+print(sys.path)
+
+
 from pathlib import Path
 import win32com.client
 import hashlib
